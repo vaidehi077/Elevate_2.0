@@ -1,9 +1,16 @@
-
 import './App.css';
+import Hero from './Components/Hero';
+import Navbar from './Components/Navbar';
+import Timer from './Components/Timer';
+
+
 
 function App() {
-  return (
-    <h1>hello</h1>
+  return (<div >
+  <Navbar />
+  <Hero />
+  <Timer duration={2 * 24 * 60 * 60 * 1000}/>
+  </div>
   
   );
 }

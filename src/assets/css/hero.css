@@ -1,0 +1,42 @@
+#maskparent {
+    margin-top: -45vh;
+    /* z-index: -1; */
+}
+
+#mask {
+    animation: glow 5s infinite alternate;
+    height: 130vh;
+    width: 100vw;
+}
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 0px rgb(73, 177, 176));
+    }
+    25% {
+        filter: drop-shadow(0 0 25px rgb(73, 177, 176));
+    }
+    50% {
+        filter: drop-shadow(0 0 50px rgb(145, 171, 171));
+    }
+    75% {
+        filter: drop-shadow(0 0 25px rgb(73, 177, 176));
+    }
+    100% {
+        filter: drop-shadow(0 0 0px rgb(73, 177, 176));
+    }
+}
+
+@media (max-width: 600px) {
+    #mask{
+    height: 100vh;
+    width: 180vw;
+    }
+    #maskparent{
+        margin-top: 0;
+    }
+}
+
+
+
+
